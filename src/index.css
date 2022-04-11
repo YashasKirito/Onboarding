@@ -99,6 +99,9 @@ select {
 
 :root {
   --primary-color: #664ee5;
+  --subdued-gray: #eff0f7;
+  --text-primary: #161b28;
+  --text-secondary: #5f6e84;
 }
 
 body {

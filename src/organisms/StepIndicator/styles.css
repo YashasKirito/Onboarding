@@ -1,0 +1,67 @@
+:root {
+  --step-gap: 3.5rem;
+}
+
+.steps {
+  display: flex;
+  flex-direction: row;
+  gap: var(--step-gap);
+}
+
+.step {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: calc(var(--step-gap) * 0.6);
+  aspect-ratio: 1;
+  border-radius: 100%;
+  font-size: calc(var(--step-gap) * 0.2);
+  border: 1px solid var(--subdued-gray);
+}
+
+.step.active {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: 1px solid var(--primary-color);
+}
+
+.step.inactive {
+  background-color: #fff;
+  color: var(--text-secondary);
+}
+.step::before,
+.step::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: calc(var(--step-gap) / 2 + 2px);
+  /* 2px for the border */
+  z-index: -1;
+}
+
+.step::before {
+  right: 100%;
+}
+
+.step::after {
+  left: 100%;
+}
+
+.step.active::before,
+.step.active::after {
+  background: var(--primary-color);
+}
+
+.step.inactive::before,
+.step.inactive::after {
+  background: var(--subdued-gray);
+}
+
+.step:first-child::before {
+  display: none;
+}
+
+.step:last-child::after {
+  display: none;
+}
