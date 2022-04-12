@@ -1,7 +1,15 @@
 import "./styles.css";
 
-const Button: React.FC = ({ children }) => {
-  return <button className="primary">{children}</button>;
+interface IButton {
+  onClick: () => void;
+}
+
+const Button: React.FC<IButton> = ({ children, onClick }) => {
+  return (
+    <button onClick={onClick} className="primary">
+      {children}
+    </button>
+  );
 };
 
 export default Button;

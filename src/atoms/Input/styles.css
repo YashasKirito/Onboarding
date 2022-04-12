@@ -9,8 +9,10 @@
   border: 1px solid rgba(95, 110, 132, 0.2);
   border-radius: 0.3rem;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: var(--f-small);
   overflow: hidden;
+
+  display: flex;
 }
 
 .input-container > input {
@@ -20,14 +22,14 @@
   font-size: var(--f-small);
   padding: 0.7rem;
   border-radius: 0.3rem;
-  width: 100%;
+  flex-grow: 1;
 }
 
 .input-container > .prefix {
   background-color: #f7f9fd;
   height: inherit;
   border-right: 1px solid rgba(95, 110, 132, 0.2);
-  padding: 1rem;
+  padding: 0.7rem;
 }
 
 .input > label {

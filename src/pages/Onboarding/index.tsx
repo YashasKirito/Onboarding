@@ -4,6 +4,7 @@ import logo from "../../assets/icons/logo.png";
 import StepOne from "./StepOne";
 
 import "./styles.css";
+import StepTwo from "./StepTwo";
 
 const Onboarding: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
@@ -17,7 +18,7 @@ const Onboarding: React.FC = () => {
       content: <StepOne nextStep={nextStep} />,
     },
     {
-      content: <h1>Hello2</h1>,
+      content: <StepTwo nextStep={nextStep} />,
     },
     {
       content: <h1>Hello3</h1>,

@@ -14,7 +14,7 @@ const StepOne: React.FC<IStepOne> = ({ nextStep }) => {
       <div className="form-container">
         <Input label="Full Name" />
         <Input label="Display Name" />
-        <Button>Create Workspace</Button>
+        <Button onClick={nextStep}>Create Workspace</Button>
       </div>
     </div>
   );
