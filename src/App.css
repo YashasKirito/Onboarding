@@ -30,3 +30,20 @@ h1 {
   font-size: var(--f-small);
   color: var(--text-secondary);
 }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+.gap-2 {
+  gap: 2rem;
+}
+
+.flex-justify-center {
+  justify-content: center;
+}

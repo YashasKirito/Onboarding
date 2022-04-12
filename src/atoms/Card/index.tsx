@@ -5,11 +5,18 @@ interface ICard {
   title: string;
   description: string;
   selected?: boolean;
+  onClick: () => void;
 }
 
-const Card: React.FC<ICard> = ({ icon, title, description, selected }) => {
+const Card: React.FC<ICard> = ({
+  icon,
+  title,
+  description,
+  selected,
+  onClick,
+}) => {
   return (
-    <div className={selected ? "card active" : "card"}>
+    <div onClick={onClick} className={selected ? "card active" : "card"}>
       <img src={icon} alt="icon" />
       <span className="card-title">{title}</span>
       <span className="card-description">{description}</span>
