@@ -1,14 +1,21 @@
 import { useState } from "react";
 import StepIndicator from "../../organisms/StepIndicator";
 import logo from "../../assets/icons/logo.png";
-import Input from "../../atoms/Input";
+import user from "../../assets/icons/user.svg";
+import Card from "../../atoms/Card";
 
 const Onboarding: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const steps = [
     {
-      content: <Input optional prefix="www.eden.com/" />,
+      content: (
+        <Card
+          icon={user}
+          title="For Myself"
+          description="Write better. Think more clearly. Stay organized."
+        />
+      ),
     },
     {
       content: <h1>Hello2</h1>,
