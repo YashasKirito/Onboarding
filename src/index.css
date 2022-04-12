@@ -102,6 +102,7 @@ select {
   --subdued-gray: #eff0f7;
   --text-primary: #161b28;
   --text-secondary: #5f6e84;
+  --text-secondary-dark: #404d61;
 }
 
 body {

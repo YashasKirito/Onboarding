@@ -1,12 +1,14 @@
 import { useState } from "react";
 import StepIndicator from "../../organisms/StepIndicator";
+import logo from "../../assets/icons/logo.png";
+import Input from "../../atoms/Input";
 
 const Onboarding: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
   const steps = [
     {
-      content: <h1>Hello1</h1>,
+      content: <Input />,
     },
     {
       content: <h1>Hello2</h1>,
@@ -21,9 +23,11 @@ const Onboarding: React.FC = () => {
 
   return (
     <>
-      <h1>Onboarding</h1>
+      <div className="logo">
+        <img src={logo} alt="eden" />
+        <h2>Eden</h2>
+      </div>
       <StepIndicator currentStep={currentStep} steps={steps} />
-      <button onClick={() => setCurrentStep(currentStep + 1)}>next</button>
     </>
   );
 };

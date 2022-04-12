@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  gap: 3rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo > img {
+  height: 2.5rem;
+  aspect-ratio: 1;
+  margin-bottom: 5px;
+}
+
+/* utils */
+
+.sub-text {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
