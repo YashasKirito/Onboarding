@@ -11,3 +11,9 @@
   flex-direction: column;
   gap: 1.15rem;
 }
+
+.step-one > img {
+  height: 3.5rem;
+  aspect-ratio: 1;
+  margin: 2rem;
+}
