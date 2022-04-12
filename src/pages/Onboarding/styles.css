@@ -1,0 +1,11 @@
+.step-one {
+  text-align: center;
+  gap: 1rem;
+}
+
+.form-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}

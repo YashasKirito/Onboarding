@@ -17,9 +17,10 @@
   border: none;
   outline: none;
   color: var(--text-secondary);
-  font-size: 0.9rem;
+  font-size: var(--f-small);
   padding: 0.7rem;
   border-radius: 0.3rem;
+  width: 100%;
 }
 
 .input-container > .prefix {
@@ -30,9 +31,10 @@
 }
 
 .input > label {
+  text-align: left;
   font-size: var(--f-small);
   margin-bottom: 5px;
-  font-weight: 500;
+  font-weight: bold;
   color: var(--text-secondary-dark);
 }
 

@@ -1,21 +1,20 @@
 import { useState } from "react";
 import StepIndicator from "../../organisms/StepIndicator";
 import logo from "../../assets/icons/logo.png";
-import user from "../../assets/icons/user.svg";
-import Card from "../../atoms/Card";
+import StepOne from "./StepOne";
+
+import "./styles.css";
 
 const Onboarding: React.FC = () => {
   const [currentStep, setCurrentStep] = useState(0);
 
+  const nextStep = () => {
+    setCurrentStep((prev) => prev + 1);
+  };
+
   const steps = [
     {
-      content: (
-        <Card
-          icon={user}
-          title="For Myself"
-          description="Write better. Think more clearly. Stay organized."
-        />
-      ),
+      content: <StepOne nextStep={nextStep} />,
     },
     {
       content: <h1>Hello2</h1>,
