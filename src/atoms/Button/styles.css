@@ -1,0 +1,19 @@
+button.primary {
+  border: none;
+  font-size: var(--f-small);
+
+  background-color: var(--primary-color);
+  color: #fff;
+
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 100%;
+
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: background-color 300ms ease;
+}
+
+button.primary:hover {
+  background-color: #44339e;
+}

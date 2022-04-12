@@ -100,9 +100,15 @@ select {
 :root {
   --primary-color: #664ee5;
   --subdued-gray: #eff0f7;
+
   --text-primary: #161b28;
   --text-secondary: #5f6e84;
   --text-secondary-dark: #404d61;
+  --text-subdued: #a3aaba;
+
+  --f-normal: 0.9rem;
+  --f-small: 0.8rem;
+  --f-x-small: 0.7rem;
 }
 
 body {

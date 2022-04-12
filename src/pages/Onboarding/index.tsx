@@ -8,7 +8,7 @@ const Onboarding: React.FC = () => {
 
   const steps = [
     {
-      content: <Input />,
+      content: <Input optional prefix="www.eden.com/" />,
     },
     {
       content: <h1>Hello2</h1>,
