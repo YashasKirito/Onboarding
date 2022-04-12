@@ -15,6 +15,7 @@ const Onboarding: React.FC = () => {
     setCurrentStep((prev) => prev + 1);
   };
 
+  // we just add more steps to this array if there are more steps in the future :)
   const steps = [
     {
       content: <StepOne nextStep={nextStep} />,
